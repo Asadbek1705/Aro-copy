@@ -3,6 +3,13 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
+p {
+  margin: 0;
+}
+h1 h2 {
+  margin: 0;
+}
+/* GAP */
 
 .container {
   max-width: 1200px;
@@ -25,6 +32,7 @@ body {
   gap: 20px;
   list-style: none;
 }
+/* GAP */
 
 .navbar_elements {
   text-underline-offset: 8px;
@@ -35,13 +43,13 @@ body {
 }
 .navbar_lang {
   padding: 2px 6px;
-  border: transparent;
+  border: 1px solid white;
   background-color: white;
 }
 .navbar_startbtn {
   padding: 14px 28px;
   background-color: #efae35;
-  border: transparent;
+  border: 1px solid white;
   border-radius: 30px;
 }
 .navbar_elements:hover {
@@ -49,11 +57,12 @@ body {
 }
 .navbar_lang:hover {
   border-radius: 10px;
-  border: 1px solid;
+  border: 1px solid black;
 }
 .navbar_startbtn:hover {
-  border: 1px solid;
+  border: 1px solid black;
 }
+/* GAP */
 
 .photo1 {
   background: url(1.jpg);
@@ -107,6 +116,7 @@ body {
 .photo1_block2 a:hover {
   background-color: hsl(0, 0%, 100%);
 }
+/* GAP */
 
 .div2 {
   padding: 90px 90px;
@@ -156,14 +166,67 @@ body {
   gap: 24px;
 }
 .img1 img {
-  width: 498px;
-  height: 420px;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 .intro {
   display: grid;
   justify-content: center;
-  flex-direction: row;
   padding: 90px;
   align-items: center;
   grid-template-columns: 1fr 1fr;
+}
+/* GAP*/
+
+.second {
+  padding-block: 50px;
+}
+.second_static {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.second_static h1 {
+  font-size: 44px;
+  font-weight: 400;
+}
+.second_static p {
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+  margin: 0;
+}
+.second_static1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  gap: 25px;
+}
+.second_static1 h1 {
+  margin: 0;
+  font-size: 58px;
+  font-weight: 400;
+}
+.second_static1 p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.second_static1 span {
+  font-size: 10px;
+  font-weight: 400;
+}
+.second_content {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+.second_img img {
+  border-radius: 40px;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
