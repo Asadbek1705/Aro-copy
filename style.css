@@ -12,10 +12,9 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position: static;
   height: 80px;
   width: 100%;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   top: 0;
   z-index: 1000;
 }
@@ -36,50 +35,135 @@ body {
 }
 .navbar_lang {
   padding: 2px 6px;
-  border: none;
+  border: transparent;
   background-color: white;
 }
 .navbar_startbtn {
   padding: 14px 28px;
   background-color: #efae35;
-  border: none;
+  border: transparent;
   border-radius: 30px;
 }
 .navbar_elements:hover {
   text-decoration: underline;
 }
 .navbar_lang:hover {
-  border: 1px solid black;
   border-radius: 10px;
+  border: 1px solid;
 }
 .navbar_startbtn:hover {
-  border: 1px solid black;
+  border: 1px solid;
 }
 
 .photo1 {
-  background-position: 100% center;
-  background-size: cover;
-  position: relative;
   background: url(1.jpg);
-  margin-top: 80px;
-  width: 100%;
-  height: 880px;
+  height: 1000px;
+  background-position: center;
+  background-size: cover;
 }
-.photo1_texts {
+.photo1_blocks {
   display: flex;
-  flex-direction: column-reverse;
-  margin-inline: 40px;
-  gap: 80px;
+  align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
-  min-height: 800px;
+  gap: 80px;
+  width: 1000px;
+  height: 1000px;
+  padding: 0 75px;
 }
 .photo1_block1 {
-  position: absolute;
-}
-.photo1_block2 {
-  margin-top: 160px;
-  position: absolute;
+  width: 566px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  max-width: 600px;
+  gap: 20px;
+  padding: 10px 15px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+.photo1_block1 h1 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 60px;
+}
+.photo1_block1 p {
+  font-weight: 400;
+  margin: 0;
+  font-size: 18px;
+}
+.photo1_block2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.photo1_block2 a {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  transition: background-color ease-in 0.1s;
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+.photo1_block2 a:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.div2 {
+  padding: 90px 90px;
+}
+.introducement {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 500px;
+}
+.introducement h1 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 60px;
+}
+.introducement p {
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+  margin: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+.buttons_1 {
+  padding: 14px 28px;
+  background-color: #efae35;
+  border: transparent;
+  border-radius: 30px;
+}
+.buttons_1:hover {
+  border: 1px solid black;
+}
+.buttons_2 {
+  text-underline-offset: 8px;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 24px;
+}
+.img1 img {
+  width: 498px;
+  height: 420px;
+}
+.intro {
+  display: grid;
+  justify-content: center;
+  flex-direction: row;
+  padding: 90px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
 }
