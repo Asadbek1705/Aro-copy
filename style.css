@@ -343,3 +343,95 @@ h1 h2 {
   max-width: 100%;
   height: auto;
 }
+
+/* GAP */
+
+.feature {
+  padding: 150px;
+}
+.feature_title h1 {
+  margin: 0;
+  font-size: 44px;
+  text-align: center;
+}
+.feature_logos img {
+  width: 98px;
+  height: 40px;
+}
+.feature_logos {
+  width: 800px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.feature_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+/* GAP */
+
+.video {
+  background: url(4.png);
+  min-height: 880px;
+  background-size: cover;
+}
+.inner {
+  padding: 90px;
+  min-height: 880px;
+  gap: 36px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inner h1 {
+  font-size: 58px;
+  font-weight: 400;
+}
+.inner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+  color: white;
+}
+.inner-text h1 {
+  font-size: 58px;
+  font-weight: 400;
+}
+.inner-text p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.video_button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.video_button button {
+  border: none;
+  height: 126px;
+  width: 126px;
+  font-size: 28px;
+  cursor: pointer;
+  background: white;
+}
+.video_button button:active {
+  background: rgb(185, 181, 181);
+}
+.btn-2 {
+  color: white;
+}
+.btn-2 span {
+  font-size: 10px;
+}
+.btn-2 h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+}
