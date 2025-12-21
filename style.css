@@ -602,3 +602,73 @@ h2 {
 }
 
 /* GAP */
+
+.life-inner {
+  display: flex;
+  gap: 20px;
+}
+.life-small-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.life-small-block img {
+  display: inline-block;
+  max-height: 350px;
+  width: 350px;
+}
+.life-big-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  background: url(23.jpg) no-repeat 50%;
+  width: 100%;
+  background-size: cover;
+  color: #fff;
+}
+.big-block_title {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 420px;
+}
+.big-block_title h1 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 400;
+}
+.big-block_title p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.big-block_btns {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.big-block_btns button {
+  background: #efae35;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: black;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+.big-block_btns button:hover {
+  border: 1px solid black;
+}
+.big-block_btns a {
+  text-decoration: none;
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.1);
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background 0.3s ease;
+}
+.big-block_btns a:hover {
+  background: rgb(212, 200, 200);
+}
